@@ -1,0 +1,63 @@
+body {
+  color: $color-gray-dark-1;
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.heading-3 {
+  text-transform: uppercase;
+  color: $color-orange;
+  font-size: 1.6rem;
+  margin-bottom: .5rem
+  ;
+}
+
+.heading-4 {
+  padding: .7rem 1.5rem;
+  font-size: 1.6rem;
+  border-bottom: 1px solid rgba($color-gray-dark-2, .5);
+}
+
+.paragraph {
+  color: $color-gray-dark-2;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.price__current {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.price__discount {
+  display: inline-block;
+  background-color: $color-orange-pale;
+  color: $color-orange;
+  padding: .2rem 1.3rem;
+  font-weight: 700;
+  transform: translateY(-3px);
+  border-radius: .5rem;
+  margin-left: 1rem;
+
+  @include mediaQuery(tab-port) {
+    transform: translateY(0);
+  }
+}
+
+.price__original {
+  color: $color-gray-dark-2;
+  text-decoration: line-through;
+
+  @include mediaQuery(tab-port) {
+    margin-left: auto;
+  }
+}

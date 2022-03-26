@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 clamp(1rem, 9vw, 10rem);
+
+  @include mediaQuery(tab-port) {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  &__text {
+    width: 55%;
+    padding: 4rem 6rem;
+
+    @include mediaQuery(tab-port) {
+      width: 100%;
+      padding: 2rem;
+
+    }
+  }
+}
+
+.price {
+  @include mediaQuery(tab-port) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+}
+
+.cta-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 2rem;
+
+  @include mediaQuery(tab-port) {
+    flex-direction: column;
+  }
+}

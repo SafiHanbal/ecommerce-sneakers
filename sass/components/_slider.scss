@@ -1,0 +1,93 @@
+.slider {
+  display: none;
+  z-index: 2;
+  width: clamp(25rem, 30vw, 50rem);
+
+
+  &--active {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mediaQuery(tab-port) {
+      display: none;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: -2.5rem;
+    right: 0;
+    fill: #69707D;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      fill: $color-orange;
+    }
+  }
+
+  &__main {
+  }
+
+  &__img-container {
+    width: 23%;
+    position: relative;
+  }
+
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__img {
+      width: 100%;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__fade{
+      width: 100%;
+      height: 7.85rem;
+      background-color: $color-white;
+      border-radius: .5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        opacity: .5;
+      }
+
+      &--active {
+        opacity: .5;
+        border: 2px solid $color-orange;
+      }
+    }
+  }
+
+  &__back {
+    @include sliderIcon;
+    left: -2rem;
+
+    & > path {
+      transform: translate(1.2rem, 1.1rem);
+    }
+  }
+
+  &__next {
+    @include sliderIcon;
+    right: -2rem;
+
+    & > path {
+      transform: translate(1.5rem, 1.1rem);
+    }
+  }
+}

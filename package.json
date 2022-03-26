@@ -1,0 +1,21 @@
+{
+  "name": "ecommerce-product-page",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.js",
+  "prettier": ".prettierrc.json",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Safi Hanbal",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0"
+  },
+  "dependencies": {
+    "core-js": "^3.21.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

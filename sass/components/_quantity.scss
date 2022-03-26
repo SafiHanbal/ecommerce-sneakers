@@ -1,0 +1,43 @@
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-gray-light-1;
+  padding: .5rem 0;
+  width: 30%;
+  border-radius: .5rem;
+
+  @include mediaQuery(tab-port) {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem 0;
+  }
+
+  &__operator {
+    cursor: pointer;
+
+    &--increase {
+      margin-left: 3rem;
+      padding: .7rem;
+
+      @include mediaQuery(tab-port) {
+        margin-left: 8rem;
+        padding: 1.5rem;
+      }
+    }
+
+    &--decrease {
+      margin-right: 3rem;
+      padding: 1.2rem .7rem;
+
+      @include mediaQuery(tab-port) {
+        margin-right: 8rem;
+        padding: 2rem 1.5rem;
+      }
+    }
+  }
+
+  &__value {
+    font-weight: 700;
+  }
+}

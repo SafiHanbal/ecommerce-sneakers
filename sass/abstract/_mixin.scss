@@ -1,0 +1,57 @@
+// Media Query Manager
+
+@mixin mediaQuery($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == big-desk {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+//////////////////////////////////////
+
+@mixin gallerySlider {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 1.5rem 2rem;
+  background-color: $color-white;
+  border-radius: 50%;
+  box-shadow: 0 .5rem 1rem rgba($color-black, .4);
+  z-index: 1;
+}
+
+@mixin sliderIcon {
+  display: block;
+  stroke: #1D2026;
+  position: absolute;
+  top: 37%;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: $color-white;
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    stroke: $color-orange;
+  }
+}

@@ -1,0 +1,87 @@
+.gallery {
+  padding: 4rem 6rem;
+  width: 45%;
+  position: relative;
+
+  @include mediaQuery(tab-port) {
+    width: 100%;
+    padding: 0;
+  }
+
+  &__product {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    min-height: min-content;
+
+    @include mediaQuery(tab-port) {
+      min-width: 100vw;
+      min-height: 100vw;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+
+    @include mediaQuery(tab-port) {
+      border-radius: 0;
+    }
+
+    &--slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: .5rem;
+
+    @include mediaQuery(tab-port) {
+      display: none;
+    }
+
+    &__img {
+      width: 23%;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        opacity: .5;
+      }
+
+      &--active {
+        border: 2px solid $color-orange;
+        opacity: .5;
+      }
+    }
+  }
+
+  &__back {
+    display: none;
+
+    @include mediaQuery(tab-port) {
+      @include gallerySlider;
+      left: 2rem;
+    }
+  }
+
+  &__next {
+    display: none;
+
+    @include mediaQuery(tab-port) {
+      @include gallerySlider;
+      right: 2rem;
+    }
+  }
+}

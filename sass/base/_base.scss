@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include mediaQuery(tab-port) {
+    font-size: 56.25%;
+  }
+
+  @include mediaQuery(phone) {
+    font-size: 50%;
+  }
+
+  @include mediaQuery(big-desk) {
+    font-size: 75%;
+  }
+}
+
+body {
+  position: relative;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba($color-black, 0.7);
+  height: 100vh;
+  width: 100vw;
+  transition: all .4s ease-in-out;
+  z-index: 1;
+
+  &--active {
+    display: block;
+  }
+}
+
+.scroll-lock {
+
+  @include mediaQuery(tab-port) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
