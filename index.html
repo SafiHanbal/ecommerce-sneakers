@@ -131,13 +131,6 @@
 
     </header>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
-
     <div class="cart">
       <h4 class="heading-4">Cart</h4>
       <div class="cart__list">
@@ -160,44 +153,40 @@
         <path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/>
       </svg>
 
-      <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" class="gallery__back slider__back">
-        <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/>
-      </svg>
-
-      <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" class="gallery__next slider__next">
-        <path d="m2 1 8 8-8 8"  stroke-width="3" fill="none" fill-rule="evenodd"/>
-      </svg>
-
       <div class="slider__main">
-        <img src="images/image-product-1.jpg" alt="Product Image" class="gallery__img">
+        <img src="images/image-product-1.jpg" alt="Product Image" class="slider__img">
       </div>
 
       <div class="slider__thumbnail">
         <div class="slider__img-container">
           <img src="images/image-product-1-thumbnail.jpg" alt="product thumbnail" class="gallery__thumbnail__img
-          slider__thumbnail__img"
-          data-thumbno="0">
-          <div class="slider__thumbnail__fade slider__thumbnail__fade--active"></div>
+          slider__thumbnail__img">
+          <div class="slider__thumbnail__fade slider__thumbnail__fade--active" data-thumbno="0"></div>
         </div>
         <div class="slider__img-container">
           <img src="images/image-product-2-thumbnail.jpg" alt="product thumbnail" class="gallery__thumbnail__img
-          slider__thumbnail__img"
-          data-thumbno="1">
-          <div class="slider__thumbnail__fade"></div>
+          slider__thumbnail__img">
+          <div class="slider__thumbnail__fade" data-thumbno="1"></div>
         </div>
         <div class="slider__img-container">
           <img src="images/image-product-3-thumbnail.jpg" alt="product thumbnail" class="gallery__thumbnail__img
-          slider__thumbnail__img"
-          data-thumbno="2">
-          <div class="slider__thumbnail__fade"></div>
+          slider__thumbnail__img">
+          <div class="slider__thumbnail__fade" data-thumbno="2"></div>
         </div>
         <div class="slider__img-container">
           <img src="images/image-product-4-thumbnail.jpg" alt="product thumbnail" class="gallery__thumbnail__img
-          slider__thumbnail__img"
-          data-thumbno="3">
-          <div class="slider__thumbnail__fade"></div>
+          slider__thumbnail__img">
+          <div class="slider__thumbnail__fade" data-thumbno="3"></div>
         </div>
       </div>
+
+      <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" class="slider__back">
+        <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/>
+      </svg>
+
+      <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg" class="slider__next">
+        <path d="m2 1 8 8-8 8"  stroke-width="3" fill="none" fill-rule="evenodd"/>
+      </svg>
     </div>
     <!-- <div class="gallery">
 
@@ -210,5 +199,17 @@
       </div>
     </div> -->
     <div class="overlay"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" class="attribution__link" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#" class="attribution__link">Abuzar Ansari (Safi Hanbal)</a>.
+    </div>
+
+    <div class="codelink">
+      <p class="codelink__text">Want to see the code</p>
+      <a href="https://github.com/SafiHanbal/ecommerce-sneakers" class="codelink__link" target="_blank">Click Here!</a>
+    </div>
   </body>
 </html>

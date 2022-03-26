@@ -35,6 +35,7 @@ class navCl {
     this.#navigationList.classList.toggle('navigation__list--active');
 
     document.body.classList.toggle('scroll-lock');
+    document.body.style.height = window.innerHeight;
   }
 
   addHandlerNavigationMenu(handler) {

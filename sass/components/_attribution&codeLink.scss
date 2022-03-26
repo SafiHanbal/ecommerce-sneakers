@@ -1,0 +1,31 @@
+.attribution {
+  text-align: center;
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-orange;
+  }
+}
+
+.codelink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: sticky;
+  position: -webkit-sticky;
+  bottom: 0;
+  background-color: #e3e3e3;
+  padding: .5rem 0;
+
+  &__link:link,
+  &__link:visited {
+    color: $color-white;
+    font-size: 1.2rem;
+    background-color: $color-orange;
+    padding: .7rem 1.2rem;
+    border-radius: .4rem;
+    margin-left: 1rem;
+  }
+}
